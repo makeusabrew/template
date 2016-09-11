@@ -55,6 +55,8 @@ sudo service nginx restart
 mysql -uroot -ptemplate -e 'CREATE DATABASE template;'
 mysql -uroot -ptemplate template < /vagrant/test/fixture/schema.sql
 
+sudo npm install -g pm2
+
 pm2 start /vagrant/env/pm2/build/vagrant.json
 sudo pm2 startup ubuntu -u vagrant
 
