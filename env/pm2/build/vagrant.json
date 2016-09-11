@@ -1,0 +1,10 @@
+[{
+  "name": "server",
+  "script": "/vagrant/app/server/index.js",
+  "log_file": "/vagrant/log/server.log",
+  "env": {
+    "CONFIG_DIR": "/vagrant/env/app",
+    "NODE_ENV": "build",
+    "DEBUG": "lib:*,server:*"
+  }
+}]

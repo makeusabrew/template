@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "semi": 2,
+    "curly": 2,
+    "eqeqeq": ["error", "smart"],
+    "no-else-return": 2,
+    "indent": ["error", 2],
+    "react/prop-types": 0
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  }
+}

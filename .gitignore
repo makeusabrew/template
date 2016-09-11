@@ -1,0 +1,8 @@
+*.sw?
+node_modules
+npm-*.log
+.vagrant
+log/*.log
+*.err.log
+*.out.log
+.DS_Store
