@@ -1,3 +1,9 @@
+require("dotenv-safe").load({
+  // could use process.env.ENV_DIR ?
+  path: `${__dirname}/../../.env`,
+  sample: `${__dirname}/../../.env.example`,
+});
+
 const swig = require("swig");
 const express = require("express");
 const debug = require("debug")("server:index");
