@@ -1,7 +1,6 @@
 require("dotenv-safe").load({
-  // could use process.env.ENV_DIR ?
-  path: `${__dirname}/../../.env`,
-  sample: `${__dirname}/../../.env.example`,
+  path: `${process.env.ENV_DIR}/.env`,
+  sample: `${process.env.ENV_DIR}/.env.example`,
 });
 
 const swig = require("swig");
@@ -39,6 +38,6 @@ module.exports = {
   }
 };
 
-if (process.env.NODE_ENV !== "test") {
+if (process.env.AUTO_START) {
   module.exports.start();
 }

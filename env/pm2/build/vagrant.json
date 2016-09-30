@@ -3,7 +3,7 @@
   "script": "/vagrant/app/server/index.js",
   "log_file": "/vagrant/log/server.log",
   "env": {
-    "NODE_ENV": "build",
+    "ENV_DIR": "/vagrant",
     "DEBUG": "lib:*,server:*"
   }
 }]
