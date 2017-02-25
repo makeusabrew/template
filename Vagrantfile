@@ -59,5 +59,6 @@ sudo npm install -g pm2
 
 pm2 start /vagrant/env/pm2/build/vagrant.json
 sudo pm2 startup ubuntu -u vagrant
+pm2 save
 
 SCRIPT
